@@ -22,7 +22,7 @@ before_install:
 - npm install -g hexo-cli
 install:
 # 不用yarn的话这里改成 npm i 即可
-- yarn
+- yarn install --pure-lockfile
 script:
 - hexo clean
 - hexo generate
