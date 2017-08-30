@@ -1,7 +1,12 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  - {name: Home, path: /, class: icon-home, layout: 1}
+  # - {name: About, path: /about, class: icon-user, layout: 2}
+  - {name: Archives, path: /archives, class: icon-archive, layout: 2}
+  # - {name: Tags, path: /tags, class: icon-tags, layout: 2}
+  # - {name: Pictures, path: /picture, class: icon-camera, layout: 2}
+  # - {name: Works, path: /works, class: icon-trophy, layout: 2}
+
 rss: /atom.xml
 
 # Content
@@ -12,25 +17,44 @@ fancybox: true
 sidebar: right
 widgets:
 - category
-- tag
-- tagcloud
-- archive
 - recent_posts
+#- tag
+- tagcloud
+- links
+#	 - recent_comment
 
-# display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
-# - category
-# - tagcloud
-# - archive
-
-# widget behavior
-archive_type: 'monthly'
-show_count: false
 
 # Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+google_analytics: UA-77760032-1
+favicon: /f.ico
+#twitter:
+#google_plus: 108158678174364359204
+#fb_admins:
+#fb_app_id:
+
+# Google sitemap
+google_siteVerification:
+  id: mjquIyteD0T9pAgVVeYydhIFU3SNBfxvDVtrqlpkcxA
+
+# Toc
+toc:
+  article: true   ## show contents in article.
+  aside: false     ## show contents in aside.
+
+## social
+#facebook_url: https://www.facebook.com/Morris1028
+github_url: https://github.com/NoviceDuke
+#google_plus_url: https://plus.google.com/u/0/108158678174364359204
+uhunt_url: http://uhunt.felix-halim.net/id/767272
+
+sitemap:
+  path: sitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+
+friends:
+ Gimmy: https://github.com/g9308370
