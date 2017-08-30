@@ -23,10 +23,11 @@ before_install:
 install:
 # 不用yarn的话这里改成 npm i 即可
 #- yarn install --pure-lockfile
-- yarn 
+- yarn
 script:
 - hexo clean
 - hexo generate
+- hexo deploy
 after_success:
 - cd ./public
 - git init
