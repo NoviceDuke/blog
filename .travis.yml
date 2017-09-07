@@ -26,7 +26,6 @@ install:
 - yarn
 script:
 - hexo clean
-- hexo generate
 after_success:
 
 - git clone https://github.com/NoviceDuke/blog.git .deploy_git
@@ -35,6 +34,7 @@ after_success:
 - cd ../
 - mv .deploy_git/.git/ ./public/
 - cd ./public
+- hexo generate --watch
 - git add .
 - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 #- cd ./public
