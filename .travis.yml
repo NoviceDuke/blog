@@ -19,22 +19,19 @@ before_install:
 # 由于使用了yarn，所以需要下载，如不用yarn这两行可以删除
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 - export PATH=$HOME/.yarn/bin:$PATH
-- npm install -g hexo-cli
 install:
 # 不用yarn的话这里改成 npm i 即可
-#- yarn install --pure-lockfile
-- yarn
+- yarn install --pure-lockfile
 script:
 - hexo clean
+- hexo generate
 after_success:
-
 - git clone https://github.com/NoviceDuke/blog.git .deploy_git
 - cd .deploy_git
 - git checkout master
 - cd ../
 - mv .deploy_git/.git/ ./public/
 - cd ./public
-- hexo generate --watch
 - git add .
 - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 #- cd ./public
