@@ -11,6 +11,7 @@ tags:
 已經能產生基本的部落格架構了，接下來當然是不要在本機上自爽了，利用`Gitgub.io`的靜態網頁，把`Hexo`編譯後的html，部署上去。
 
 ----
+![Imgur](https://i.imgur.com/TiPy6IR.png)
 ## main_config
 這是指專案下的設定檔
 可以設定作者、語系、部署位置等相關設定
@@ -22,7 +23,7 @@ tags:
   url: https://github.com/作者/專案名稱
   root:/專案名稱/
 ```
->  修改URL的時候，也可以利用本地執行`hexo server`來觀察設定是否成功
->  而`xxx.github.io`  是 `Github`官方幫各帳號預設的靜態網頁
+>  - 修改`URL`的時候，也可以利用本地執行`hexo server`來觀察設定是否成功，`terminal`的提示會更改成我們的設置子路徑
+>  - 而`xxx.github.io`  是 `Github`官方幫各帳號預設的靜態網頁
 
---- 
+---- 
