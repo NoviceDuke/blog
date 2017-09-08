@@ -1,7 +1,9 @@
 ---
-title: Hexo
+title: 初探Hexo
 categories:
 - Hexo
+tags:
+- Hexo 
 ---
 ## Introduction
 Hexo 是一個靜態網頁的產生系統，可將`markdown`編譯為`html`，由台灣人[tommy351](https://github.com/tommy351)所開發的
