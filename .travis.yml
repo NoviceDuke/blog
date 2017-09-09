@@ -33,7 +33,7 @@ after_success:
 - mv .deploy_git/.git/ ./public/
 - cd ./public
 - git add .
-- git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
+- git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H+8:%M"`"
 #- cd ./public
 #- git init
 #- git add --all .
