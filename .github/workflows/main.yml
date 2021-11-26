@@ -30,5 +30,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           publish_branch: gh-pages
+          external_repository: noviceduke/noviceduke.github.io/blog/
           github_token: ${{ secrets.HUGO }}
           publish_dir: ./public
